@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fewgo Anime Products | Buy Anime Items from ?100</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+      url('https://wallpapercave.com/wp/wp5128415.jpg') no-repeat center/cover fixed;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.7);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: #ff3d81;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #ff3d81; }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 55px;
+      margin-bottom: 15px;
+      color: #00ffcc;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 15px 45px;
+      background: #ff3d81;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 70px 60px;
+      background: rgba(0,0,0,0.8);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 0 25px rgba(255,61,129,0.5);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      color: #00ffcc;
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .buy-btn:hover { background: #1ebe5d; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .feature-box {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #000;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Fewgo Logo" style="height:45px; margin-right:15px;">
+    <h1>Fewgo Anime</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h2>Anime Products From ?100</h2>
+      <p>Figures • Keychains • Posters • Stickers • Collectibles</p>
+      <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+    </div>
+  </div>
+
+  <section id="products">
+    <h2 style="text-align:center; margin-bottom:40px;">?? Popular Anime Products</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="Naruto Figure">
+        <h3>Naruto Mini Figure</h3>
+        <div class="price">?199</div>
+        <p>Premium anime collectible</p>
+        <a class="buy-btn" href="https://wa.me/916398998672">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Keychain">
+        <h3>Anime Keychain</h3>
+        <div class="price">?100</div>
+        <p>Lightweight & stylish</p>
+        <a class="buy-btn" href="https://wa.me/916398998672">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Poster">
+        <h3>Anime Wall Poster</h3>
+        <div class="price">?149</div>
+        <p>HD quality anime print</p>
+        <a class="buy-btn" href="https://wa.me/916398998672">Order on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Sticker">
+        <h3>Anime Sticker Pack</h3>
+        <div class="price">?120</div>
+        <p>Waterproof & vibrant</p>
+        <a class="buy-btn" href="https://wa.me/916398998672">Order on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <h2 style="text-align:center; margin-bottom:30px;">Why Choose Fewgo?</h2>
+    <div class="features">
+      <div class="feature-box">?? Trending Anime Products</div>
+      <div class="feature-box">?? Budget Friendly Prices</div>
+      <div class="feature-box">?? Fast Shipping</div>
+      <div class="feature-box">?? Easy WhatsApp Ordering</div>
+    </div>
+  </section>
+
+  <section id="payment">
+    <h2 style="text-align:center; margin-bottom:20px;">?? Order & Payment Options</h2>
+    <p style="text-align:center;">? Shop directly on website</p>
+    <p style="text-align:center;">? Order via WhatsApp</p>
+    <p style="text-align:center;">? UPI / COD Available</p>
+    <h2 style="text-align:center; margin-bottom:20px;">Payment Options</h2>
+    <p style="text-align:center;">? UPI Payment Accepted</p>
+    <p style="text-align:center; font-size:18px;"><b>UPI ID: youngartist902@okaxis</b></p>
+    <p style="text-align:center; margin-top:10px;">? Cash on Delivery Available (Selected Products)</p>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center; margin-bottom:20px;">Contact Fewgo Anime</h2>
+    <p style="text-align:center;">Order via WhatsApp or Instagram</p>
+    <p style="text-align:center; margin-top:10px;">Instagram: <b>@fewgo.ltv</b><br>WhatsApp: <b>+91 63989 98672</b><br>UPI: <b>youngartist902@okaxis</b></p>
+  </section>
+
+  <!-- CART & ORDER FORM -->
+  <section id="cart" style="padding:70px 60px; background:#0b0b0b;">
+    <h2 style="text-align:center; margin-bottom:30px;">?? Your Cart</h2>
+    <div id="cartItems" style="max-width:800px; margin:auto; color:#fff;">Your cart is empty.</div>
+
+    <div style="max-width:800px; margin:40px auto; background:#1c1c1c; padding:25px; border-radius:15px;">
+      <h3 style="margin-bottom:15px;">?? Order Form</h3>
+      <input id="cName" placeholder="Your Name" style="width:100%; padding:10px; margin-bottom:10px;">
+      <input id="cPhone" placeholder="Phone Number" style="width:100%; padding:10px; margin-bottom:10px;">
+      <textarea id="cAddress" placeholder="Full Address" style="width:100%; padding:10px; margin-bottom:10px;"></textarea>
+      <button onclick="placeOrder()" style="width:100%; padding:12px; background:#ff3d81; color:#fff; border:none; border-radius:8px;">Place Order via WhatsApp</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Fewgo Anime Products | Designed for Anime Lovers ??
+  </footer>
+
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel" style="display:none; padding:40px; background:#111;">
+    <h2 style="color:#00ffcc; text-align:center;">Fewgo Admin Panel</h2>
+    <p style="text-align:center; margin-bottom:20px;">Add / Edit Products Easily</p>
+
+    <div style="max-width:600px; margin:auto; background:#1c1c1c; padding:25px; border-radius:15px;">
+      <input id="pName" placeholder="Product Name" style="width:100%; padding:10px; margin-bottom:10px;">
+      <input id="pPrice" placeholder="Price (?)" style="width:100%; padding:10px; margin-bottom:10px;">
+      <input id="pImage" placeholder="Image / GIF URL" style="width:100%; padding:10px; margin-bottom:10px;">
+      <textarea id="pDesc" placeholder="Product Description" style="width:100%; padding:10px; margin-bottom:10px;"></textarea>
+      <button onclick="addProduct()" style="width:100%; padding:12px; background:#25D366; color:#fff; border:none; border-radius:8px;">Add Product</button>
+    </div>
+  </div>
+
+  <script>
+    const adminPassword = "Fewgo@20251225";
+
+    function openAdmin() {
+      const pass = prompt("Enter Admin Password");
+      if (pass === adminPassword) {
+        document.getElementById('adminPanel').style.display = 'block';
+        document.getElementById('products').style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+      } else {
+        alert("Wrong password");
+      }
+    }
+
+    function addProduct() {
+      const name = document.getElementById('pName').value;
+      const price = document.getElementById('pPrice').value;
+      const img = document.getElementById('pImage').value;
+      const desc = document.getElementById('pDesc').value;
+
+      if (!name || !price || !img) {
+        alert('Fill all required fields');
+        return;
+      }
+
+      const productHTML = `
+      <div class="card">
+        <img src="${img}" alt="${name}">
+        <h3>${name}</h3>
+        <div class="price">?${price}</div>
+        <p>${desc}</p>
+        <a class="buy-btn" onclick="addToCart('${name}', ${price})">Add to Cart</a>
+        <a class="buy-btn" href="https://wa.me/916398998672?text=I%20want%20to%20order%20${encodeURIComponent(name)}">Order on WhatsApp</a>
+      </div>`;
+
+      document.querySelector('.products').insertAdjacentHTML('beforeend', productHTML);
+
+      document.getElementById('pName').value = '';
+      document.getElementById('pPrice').value = '';
+      document.getElementById('pImage').value = '';
+      document.getElementById('pDesc').value = '';
+    }
+
+      const productHTML = `
+      <div class="card">
+        <img src="${img}" alt="${name}">
+        <h3>${name}</h3>
+        <div class="price">?${price}</div>
+        <p>${desc}</p>
+        <a class="buy-btn" href="https://wa.me/916398998672?text=I%20want%20to%20order%20${encodeURIComponent(name)}">Order on WhatsApp</a>
+        <a class="buy-btn" style="background:#ff3d81; margin-left:6px;" href="#payment">Shop on Website</a>
+      </div>`;
+
+      document.querySelector('.products').insertAdjacentHTML('beforeend', productHTML);
+
+      document.getElementById('pName').value = '';
+      document.getElementById('pPrice').value = '';
+      document.getElementById('pImage').value = '';
+      document.getElementById('pDesc').value = '';
+    }
+  let cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      renderCart();
+      alert(name + ' added to cart');
+    }
+
+    function renderCart() {
+      const cartDiv = document.getElementById('cartItems');
+      if (cart.length === 0) {
+        cartDiv.innerHTML = 'Your cart is empty.';
+        return;
+      }
+
+      let html = '<ul>';
+      let total = 0;
+      cart.forEach((item, index) => {
+        total += item.price;
+        html += `<li>${item.name} - ?${item.price}</li>`;
+      });
+      html += `</ul><p><b>Total: ?${total}</b></p>`;
+      cartDiv.innerHTML = html;
+    }
+
+    function placeOrder() {
+      const name = document.getElementById('cName').value;
+      const phone = document.getElementById('cPhone').value;
+      const address = document.getElementById('cAddress').value;
+
+      if (!name || !phone || !address || cart.length === 0) {
+        alert('Fill all details and add products to cart');
+        return;
+      }
+
+      let message = `Order Details:%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0A%0AProducts:%0A`;
+      let total = 0;
+      cart.forEach(item => {
+        total += item.price;
+        message += `- ${item.name} (?${item.price})%0A`;
+      });
+      message += `%0ATotal: ?${total}`;
+
+      window.location.href = `https://wa.me/916398998672?text=${message}`;
+    }
+
+  </script>
+
+  <button onclick="openAdmin()" style="position:fixed; bottom:20px; right:20px; padding:12px 18px; border-radius:50px; background:#ff3d81; color:#fff; border:none;">Admin</button>
+
+</body>
+</html>
