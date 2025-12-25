@@ -284,23 +284,7 @@
       }
 
       const productHTML = `
-      <div class="card">
-        <img src="${img}" alt="${name}">
-        <h3>${name}</h3>
-        <div class="price">?${price}</div>
-        <p>${desc}</p>
-        <a class="buy-btn" onclick="addToCart('${name}', ${price})">Add to Cart</a>
-        <a class="buy-btn" href="https://wa.me/916398998672?text=I%20want%20to%20order%20${encodeURIComponent(name)}">Order on WhatsApp</a>
-      </div>`;
-
-      document.querySelector('.products').insertAdjacentHTML('beforeend', productHTML);
-
-      document.getElementById('pName').value = '';
-      document.getElementById('pPrice').value = '';
-      document.getElementById('pImage').value = '';
-      document.getElementById('pDesc').value = '';
-    }
-
+      
       const productHTML = `
       <div class="card">
         <img src="${img}" alt="${name}">
