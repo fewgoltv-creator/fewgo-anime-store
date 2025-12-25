@@ -367,6 +367,27 @@
   </script>
 
   <button onclick="openAdmin()" style="position:fixed; bottom:20px; right:20px; padding:12px 18px; border-radius:50px; background:#ff3d81; color:#fff; border:none;">Admin</button>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGPszTW_PIqPgj50va2VaFAZAqOfcSXNs",
+    authDomain: "fewgo-anime-store.firebaseapp.com",
+    projectId: "fewgo-anime-store",
+    storageBucket: "fewgo-anime-store.appspot.com",
+    messagingSenderId: "926674945616",
+    appId: "1:926674945616:web:3dff505fd107f13d8ab355"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
 
 </body>
 </html>
