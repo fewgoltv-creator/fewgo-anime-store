@@ -14,7 +14,7 @@
       color: #fff;
     }
 
-    header {
+    header {<button onclick="openAdmin()">Admin Login</button>
       padding: 20px 60px;
       display: flex;
       justify-content: space-between;
@@ -371,6 +371,21 @@
 
   const auth = firebase.auth();
   const db = firebase.firestore();
+</script>
+<script>
+  function openAdmin() {
+    const email = prompt("Enter Admin Email");
+    const password = prompt("Enter Admin Password");
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(() => {
+        alert("Admin Login Successful");
+        window.location.href = "admin.html";
+      })
+      .catch((error) => {
+        alert("Wrong email or password");
+      });
+  }
 </script>
 
 </body>
