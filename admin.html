@@ -3,8 +3,94 @@
 <head>
   <title>Fewgo Admin Panel</title>
 </head>
-<body style="background:black;color:white;">
-  <h1>Welcome Admin 👑</h1>
-  <p>Add / Manage Products here</p>
+<body style="background:#0b0b0b;color:white;font-family:Poppins;padding:20px">
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGPszTW_PIqPgj50va2VaFAZAqOfcSXNs",
+    authDomain: "fewgo-anime-store.firebaseapp.com",
+    projectId: "fewgo-anime-store",
+    storageBucket: "fewgo-anime-store.appspot.com",
+    messagingSenderId: "926674945616",
+    appId: "1:926674945616:web:3dff505fd107f13d8ab355"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script>
+  firebase.auth().onAuthStateChanged((user) => {
+    if (!user) {
+      alert("Admin login required");
+      window.location.href = "index.html";
+    }
+  });
+</script>
+
+<h1>Fewgo Admin Dashboard 👑</h1>
+
+<button onclick="logout()">Logout</button>
+
+<hr>
+
+<h2>Add Product</h2>
+<input id="name" placeholder="Product Name"><br><br>
+<input id="price" placeholder="Price"><br><br>
+<input id="image" placeholder="Image URL"><br><br>
+
+<button onclick="addProduct()">Add Product</button>
+
+<hr>
+
+<h2>Products</h2>
+<div id="products"></div>
+
+<script>
+function addProduct() {
+  const name = document.getElementById("name").value;
+  const price = document.getElementById("price").value;
+  const image = document.getElementById("image").value;
+
+  db.collection("products").add({
+    name,
+    price,
+    image
+  }).then(() => {
+    alert("Product Added");
+    location.reload();
+  });
+}
+
+function loadProducts() {
+  db.collection("products").onSnapshot(snapshot => {
+    const box = document.getElementById("products");
+    box.innerHTML = "";
+    snapshot.forEach(doc => {
+      const p = doc.data();
+      box.innerHTML += `
+        <div style="border:1px solid gray;padding:10px;margin:10px">
+          <img src="${p.image}" width="100"><br>
+          <b>${p.name}</b><br>
+          ₹${p.price}
+        </div>
+      `;
+    });
+  });
+}
+
+loadProducts();
+
+function logout(){
+  auth.signOut().then(()=>{
+    window.location.href="index.html";
+  })
+}
+</script>
 </body>
+
 </html>
